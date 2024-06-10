@@ -1,0 +1,9 @@
+body {
+    padding-top: 56px;
+}
+
+.jumbotron {
+    background-image: url('{{ url_for('static', filename='images/headertrivia.jpg') }}');
+    background-size: cover;
+    color: white;
+}

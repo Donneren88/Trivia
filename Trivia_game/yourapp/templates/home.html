@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="jumbotron" style="background-image: url('{{ url_for('static', filename='images/headertrivia.jpg') }}'); background-size: cover; background-position: center;">
+    <h1 class="display-4">Welcome to Trivia Game!</h1>
+    <p class="lead">Test your knowledge and compete with others!</p>
+    <hr class="my-4">
+    <a class="btn btn-primary btn-lg" href="{{ url_for('main_routes.create_room') }}" role="button">Create a Room</a>
+    <a class="btn btn-secondary btn-lg" href="{{ url_for('main_routes.join_room') }}" role="button">Join a Room</a>
+</div>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="container">
+        <h1 class="mt-5">Join a Room</h1>
+        <form method="GET" action="{{ url_for('main_routes.join_room') }}">
+            <div class="mb-3">
+                <label for="roomCode" class="form-label">Room Code</label>
+                <input type="text" class="form-control" id="roomCode" name="roomCode" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Join</button>
+        </form>
+    </div>
+{% endblock %}
